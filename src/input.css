@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../assets/fonts/cairo-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+08A0-08E2, U+10E60-10E7E, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../assets/fonts/cairo-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0292, U+2000-206F, U+2074, U+2082, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body, * {
+  font-family: 'Cairo', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Core Responsive Navbar Rules */
+@media (min-width: 1024px) {
+  .site-header nav,
+  .site-header nav.hidden,
+  .site-header .hidden.lg\:block {
+    display: block !important;
+  }
+  .site-header #mobile-menu-btn,
+  .site-header .lg\:hidden {
+    display: none !important;
+  }
+  .site-header #mobile-menu {
+    display: none !important;
+  }
+  .site-header .hidden.sm\:inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .site-header nav.hidden,
+  .site-header nav {
+    display: none !important;
+  }
+  .site-header #mobile-menu-btn,
+  .site-header .lg\:hidden {
+    display: inline-flex !important;
+  }
+}

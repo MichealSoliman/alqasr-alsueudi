@@ -1,0 +1,67 @@
+RewriteEngine On
+
+# 1. توحيد https + إزالة www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.alqasr-alsueudi\.com$ [NC]
+RewriteRule ^ https://alqasr-alsueudi.com%{REQUEST_URI} [L,R=301]
+
+# 2. تحويلات 301 لمنع كانيباليزيشن الصفحة الرئيسية (Primary Keyword Cannibalization)
+RewriteRule ^furniture-moving-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^furniture-moving-in-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^best-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^jeddah-furniture-moving-company/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^blogs/best-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^blogs/best-furniture-moving-company/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^blogs/best-moving-company-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-moving-services-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-transportation-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
+
+# 2.5 قواعد HTTP 410 Gone للصفحات المحذوفة نهائياً (Keyword Cannibalization Cleanup)
+RewriteRule ^blogs/best-furniture-moving-north-jeddah/?$ - [R=410,L,NC]
+RewriteRule ^blogs/furniture-moving-for-offices-and-companies/?$ - [R=410,L,NC]
+RewriteRule ^blogs/furniture-moving-trucks-in-jeddah/?$ - [R=410,L,NC]
+
+# 3. تحويلات 301 لمقالات والخدمات المكررة القديمة إلى صفحات الخدمات الرئيسية الصريحة
+RewriteRule ^blogs/furniture-dismantling-and-assembly-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-dismantling-and-assembly-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-packing-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-packing-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-storage-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-storage-company-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-packing-and-storage-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-storage-warehouses-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-moving-prices-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/cheapest-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/cheap-furniture-moving-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/cheap-dyna-furniture-moving-jeddah/?$ https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/ [R=301,L,NC]
+RewriteRule ^furniture-moving-in-villas-in-jeddah/?$ https://alqasr-alsueudi.com/villa-moving-jeddah/ [R=301,L,NC]
+RewriteRule ^furniture-moving-company-in-jeddah-and-riyadh/?$ https://alqasr-alsueudi.com/areas/jeddah-to-riyadh/ [R=301,L,NC]
+
+# 4. تشغيل الصفحات بدون كتابة .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# 5. منع تصفح الفولدرات وحماية الملفات الحساسة
+Options -Indexes
+
+<FilesMatch "^(\.htaccess|\.env|config\.php|composer\.json)$">
+Require all denied
+</FilesMatch>
+
+# 6. ضغط الملفات وتحسين التخزين المؤقت
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css
+AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 7 days"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
