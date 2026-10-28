@@ -16,10 +16,10 @@ RewriteRule ^blogs/best-moving-company-jeddah/?$ https://alqasr-alsueudi.com/ [R
 RewriteRule ^blogs/furniture-moving-services-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 RewriteRule ^blogs/furniture-transportation-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 
-# 2.5 قواعد HTTP 410 Gone للصفحات المحذوفة نهائياً (Keyword Cannibalization Cleanup)
-RewriteRule ^blogs/best-furniture-moving-north-jeddah/?$ - [R=410,L,NC]
-RewriteRule ^blogs/furniture-moving-for-offices-and-companies/?$ - [R=410,L,NC]
-RewriteRule ^blogs/furniture-moving-trucks-in-jeddah/?$ - [R=410,L,NC]
+# 2.5 تحويلات 301 لمقالات المدونة المدمجة مع صفحات الخدمات المخصصة
+RewriteRule ^blogs/best-furniture-moving-north-jeddah/?$ https://alqasr-alsueudi.com/north-jeddah-furniture-moving/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-moving-for-offices-and-companies/?$ https://alqasr-alsueudi.com/moving-offices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-moving-trucks-in-jeddah/?$ https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/ [R=301,L,NC]
 
 # 3. تحويلات 301 لمقالات والخدمات المكررة القديمة إلى صفحات الخدمات الرئيسية الصريحة
 RewriteRule ^blogs/furniture-dismantling-and-assembly-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-dismantling-and-assembly-in-jeddah/ [R=301,L,NC]
