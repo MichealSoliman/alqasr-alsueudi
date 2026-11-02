@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-});
 
     // Add lazy loading to images without loading attribute
     document.querySelectorAll('img:not([loading])').forEach(img => {
