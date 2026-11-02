@@ -24,32 +24,79 @@ body, * {
 @tailwind components;
 @tailwind utilities;
 
-/* Core Responsive Navbar Rules */
+/* Core Responsive Navbar & Mega Dropdown Rules */
 @media (min-width: 1024px) {
+  header nav,
   .site-header nav,
+  header nav.hidden,
   .site-header nav.hidden,
+  header .hidden.lg\:block,
   .site-header .hidden.lg\:block {
     display: block !important;
   }
+  header #mobile-menu-btn,
   .site-header #mobile-menu-btn,
+  header .lg\:hidden,
   .site-header .lg\:hidden {
     display: none !important;
   }
+  header #mobile-menu,
   .site-header #mobile-menu {
     display: none !important;
   }
+  header .hidden.sm\:inline-flex,
   .site-header .hidden.sm\:inline-flex {
     display: inline-flex !important;
+  }
+
+  /* Desktop Mega Dropdown - Perfect Centering & No Squishing */
+  header .group > div,
+  .site-header .group > div {
+    position: absolute !important;
+    top: 100% !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, 8px) !important;
+    width: 580px !important;
+    max-width: calc(100vw - 32px) !important;
+    box-sizing: border-box !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s !important;
+    pointer-events: none !important;
+    z-index: 9999 !important;
+  }
+
+  header .group:hover > div,
+  header .group:focus-within > div,
+  header .group.is-open > div,
+  .site-header .group:hover > div,
+  .site-header .group:focus-within > div,
+  .site-header .group.is-open > div {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(-50%, 0) !important;
+    pointer-events: auto !important;
   }
 }
 
 @media (max-width: 1023.98px) {
+  header nav,
+  .site-header nav,
+  header nav.hidden,
   .site-header nav.hidden,
-  .site-header nav {
+  header .hidden.lg\:block,
+  .site-header .hidden.lg\:block {
     display: none !important;
   }
+  header #mobile-menu-btn,
   .site-header #mobile-menu-btn,
+  header .lg\:hidden,
   .site-header .lg\:hidden {
-    display: inline-flex !important;
+    display: flex !important;
+  }
+  header #mobile-menu:not(.hidden),
+  .site-header #mobile-menu:not(.hidden) {
+    display: block !important;
   }
 }
