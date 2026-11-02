@@ -43,129 +43,135 @@
 
     <!-- Schema Structured Data (JSON-LD) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://alqasr-alsueudi.com/#movingcompany",
+      "name": "شركة القصر السعودي لفك وتركيب غرف النوم بجدة",
+      "url": "https://alqasr-alsueudi.com/",
+      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+      "image": "https://alqasr-alsueudi.com/assets/img/disassembly-and-assembly-of-bedrooms.webp",
+      "telephone": "+966540026747",
+      "priceRange": "SAR 150 - 800",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع حراء، حي المروة",
+        "addressLocality": "Jeddah",
+        "addressRegion": "Makkah Province",
+        "postalCode": "23541",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.6167",
+        "longitude": "39.1564"
+      },
+      "areaServed": [
         {
-          "@type": "HomeAndConstructionBusiness",
-          "@id": "https://alqasr-alsueudi.com/#company",
-          "name": "شركة القصر السعودي لفك وتركيب غرف النوم بجدة",
-          "url": "https://alqasr-alsueudi.com/",
-          "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-          "image": "https://alqasr-alsueudi.com/assets/img/disassembly-and-assembly-of-bedrooms.webp",
-          "telephone": "+966540026747",
-          "priceRange": "SAR 150 - 800",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "شارع حراء، حي المروة",
-            "addressLocality": "Jeddah",
-            "addressRegion": "Makkah Province",
-            "postalCode": "23541",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "21.6167",
-            "longitude": "39.1564"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Jeddah" },
-            { "@type": "AdministrativeArea", "name": "Makkah Province" }
-          ]
+          "@type": "City",
+          "name": "Jeddah"
         },
         {
-          "@type": "Service",
-          "@id": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/#service",
-          "name": "خدمة فك وتركيب غرف النوم بجدة",
-          "serviceType": "Bedroom Furniture Assembly and Disassembly Service in Jeddah",
-          "provider": {
-            "@id": "https://alqasr-alsueudi.com/#company"
-          },
-          "areaServed": {
-            "@type": "City",
-            "name": "Jeddah"
-          },
-          "url": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/",
-          "description": "خدمات فك وتركيب وصيانة غرف النوم المودرن والكلاسيكية وغرف نوم ايكيا والدواليب السحاب والأسرة الهيدروليكية بجدة بأيدي نجارين محترفين مع التغليف والضمان.",
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "SAR",
-            "price": "200",
-            "availability": "https://schema.org/InStock",
-            "url": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/"
+          "@type": "AdministrativeArea",
+          "name": "Makkah Province"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/#service",
+      "name": "خدمة فك وتركيب غرف النوم بجدة",
+      "serviceType": "Bedroom Furniture Assembly and Disassembly Service in Jeddah",
+      "provider": {
+        "@id": "https://alqasr-alsueudi.com/#movingcompany"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Jeddah"
+      },
+      "url": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/",
+      "description": "خدمات فك وتركيب وصيانة غرف النوم المودرن والكلاسيكية وغرف نوم ايكيا والدواليب السحاب والأسرة الهيدروليكية بجدة بأيدي نجارين محترفين مع التغليف والضمان.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "SAR",
+        "price": "200",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alqasr-alsueudi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "خدماتنا",
+          "item": "https://alqasr-alsueudi.com/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "فك وتركيب غرف النوم بجدة",
+          "item": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كم سعر فك وتركيب غرفة النوم في جدة 2026؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يبدأ سعر فك وتركيب غرفة النوم الفردية أو غرفة الأطفال من 150 إلى 250 ريال، وغرف النوم المتوسطة من 300 إلى 450 ريال، بينما تتراوح غرف النوم الكبيرة (ماستر دائرية أو إيطالية مع دواليب سحاب 6-8 أبواب وتسريحة وسرير هيدروليك) بين 500 و750 ريال."
           }
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "الرئيسية",
-              "item": "https://alqasr-alsueudi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "خدماتنا",
-              "item": "https://alqasr-alsueudi.com/services/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "فك وتركيب غرف النوم بجدة",
-              "item": "https://alqasr-alsueudi.com/disassembly-and-assembly-of-bedrooms/"
-            }
-          ]
+          "@type": "Question",
+          "name": "هل يمكن فك وتركيب غرف نوم ايكيا (IKEA) وإعادة ضبطها بدقة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، لدينا نجارون متخصصون في تجميع وفك أثاث ايكيا وميداس وهوم سنتر، مجهزون بمفاتيح الألنكي ومفكات عزم الدوران الأصلية لحماية أخشاب MDF المضغوطة وأقفال الكام-لوك (Cam-locks) من التلف."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "كم سعر فك وتركيب غرفة النوم في جدة 2026؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يبدأ سعر فك وتركيب غرفة النوم الفردية أو غرفة الأطفال من 150 إلى 250 ريال، وغرف النوم المتوسطة من 300 إلى 450 ريال، بينما تتراوح غرف النوم الكبيرة (ماستر دائرية أو إيطالية مع دواليب سحاب 6-8 أبواب وتسريحة وسرير هيدروليك) بين 500 و750 ريال."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يمكن فك وتركيب غرف نوم ايكيا (IKEA) وإعادة ضبطها بدقة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، لدينا نجارون متخصصون في تجميع وفك أثاث ايكيا وميداس وهوم سنتر، مجهزون بمفاتيح الألنكي ومفكات عزم الدوران الأصلية لحماية أخشاب MDF المضغوطة وأقفال الكام-لوك (Cam-locks) من التلف."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يمكن طلب نجار لفك وتركيب غرفة نوم داخل نفس المنزل بدون نقل؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم بالتأكيد، نقدم خدمة النجار المنزلي المباشر لفك الغرفة ونقلها من غرفة لأخرى في نفس البيت أو الفيلا لأغراض تجديد الدهانات أو الباركيه وإعادة تركيبها بدقة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف تتعاملون مع الدواليب السحاب الإيطالية والتركية الحساسة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يتم ترقيم كافة الألواح والمفصلات بدقة، وفك المجاري العلوية والسفلية الهيدروليكية، وحفظ البكرات وممتصات الصدمات (Soft-Close Dampers) في أكياس مخصصة، ثم إعادة ضبط الميزان بالليزر عند التركيب لتنزلق الأبواب بنعومة تامة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تقدمون ضماناً على فك وتركيب غرف النوم؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نقدم ضماناً خطياً على استقرار وسلامة التركيب، وخلو الأخشاب من أي خدوش أو كسور، مع التزامنا الفوري بإصلاح أو تعويض أي قطعة قد تتأثر أثناء العمل."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "هل يمكن طلب نجار لفك وتركيب غرفة نوم داخل نفس المنزل بدون نقل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم بالتأكيد، نقدم خدمة النجار المنزلي المباشر لفك الغرفة ونقلها من غرفة لأخرى في نفس البيت أو الفيلا لأغراض تجديد الدهانات أو الباركيه وإعادة تركيبها بدقة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف تتعاملون مع الدواليب السحاب الإيطالية والتركية الحساسة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتم ترقيم كافة الألواح والمفصلات بدقة، وفك المجاري العلوية والسفلية الهيدروليكية، وحفظ البكرات وممتصات الصدمات (Soft-Close Dampers) في أكياس مخصصة، ثم إعادة ضبط الميزان بالليزر عند التركيب لتنزلق الأبواب بنعومة تامة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تقدمون ضماناً على فك وتركيب غرف النوم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نقدم ضماناً خطياً على استقرار وسلامة التركيب، وخلو الأخشاب من أي خدوش أو كسور، مع التزامنا الفوري بإصلاح أو تعويض أي قطعة قد تتأثر أثناء العمل."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * { font-family: 'Cairo', sans-serif; }

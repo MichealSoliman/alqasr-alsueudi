@@ -38,249 +38,261 @@
 
     <!-- Schema Structured Data (JSON-LD) الشامل جداً -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "MovingCompany",
+      "@id": "https://alqasr-alsueudi.com/#movingcompany",
+      "name": "شركة القصر السعودي لنقل العفش من جدة إلى المدينة المنورة",
+      "url": "https://alqasr-alsueudi.com/",
+      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+      "image": "https://alqasr-alsueudi.com/assets/img/jeddah-to-medina.webp",
+      "telephone": "+966540026747",
+      "priceRange": "700-5000 SAR",
+      "description": "شركة القصر السعودي هي أفضل شركة نقل عفش من جدة إلى المدينة المنورة، تقدم خدمات نقل الأثاث بين المدن مع الفك والتركيب والتغليف والضمان الشامل والشاحنات المغلقة عبر طريق الهجرة.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jeddah",
+        "addressRegion": "Makkah Province",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.543333",
+        "longitude": "39.172779"
+      },
+      "areaServed": [
         {
-          "@type": "MovingCompany",
-          "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#movingcompany",
-          "name": "شركة القصر السعودي لنقل العفش من جدة إلى المدينة المنورة",
-          "url": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/",
-          "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-          "image": "https://alqasr-alsueudi.com/assets/img/jeddah-to-medina.webp",
-          "telephone": "+966540026747",
-          "priceRange": "700-5000 SAR",
-          "description": "شركة القصر السعودي هي أفضل شركة نقل عفش من جدة إلى المدينة المنورة، تقدم خدمات نقل الأثاث بين المدن مع الفك والتركيب والتغليف والضمان الشامل والشاحنات المغلقة عبر طريق الهجرة.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Jeddah",
-            "addressRegion": "Makkah Province",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "21.543333",
-            "longitude": "39.172779"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Jeddah" },
-            { "@type": "City", "name": "Medina" }
-          ],
-          "openingHours": "Mo-Su 00:00-23:59",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "512",
-            "bestRating": "5",
-            "worstRating": "1"
+          "@type": "City",
+          "name": "Jeddah"
+        },
+        {
+          "@type": "City",
+          "name": "Medina"
+        }
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "512",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#service",
+      "name": "خدمة نقل العفش من جدة إلى المدينة المنورة",
+      "serviceType": "Intercity Furniture Moving",
+      "provider": {
+        "@id": "https://alqasr-alsueudi.com/#movingcompany"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Jeddah"
+        },
+        {
+          "@type": "City",
+          "name": "Medina"
+        }
+      ],
+      "description": "خدمة نقل عفش وأثاث من جدة للمدينة المنورة شاملة الفك والتركيب والتغليف الخماسي مع التأمين الشامل وشاحنات دينا مغلقة عبر طريق الهجرة السريع.",
+      "url": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#webpage",
+      "url": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/",
+      "name": "شركة نقل عفش من جدة الى المدينة 0540026747 | شركة القصر السعودي",
+      "description": "دليل وخدمات شركة نقل عفش من جدة إلى المدينة المنورة مع الفك والتركيب والتغليف وضمان السلامة 100%.",
+      "inLanguage": "ar-SA"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alqasr-alsueudi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نقل العفش بين المدن",
+          "item": "https://alqasr-alsueudi.com/furniture-moving-between-jeddah-cities/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "شركة نقل عفش من جدة إلى المدينة المنورة",
+          "item": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/"
+        }
+      ]
+    },
+    {
+      "@type": "OfferCatalog",
+      "name": "أسعار نقل العفش من جدة إلى المدينة المنورة",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "نقل عفش شقة صغيرة / استوديو من جدة للمدينة",
+          "price": "800",
+          "priceCurrency": "SAR"
+        },
+        {
+          "@type": "Offer",
+          "name": "نقل عفش شقة 3 غرف وصالة من جدة للمدينة",
+          "price": "1500",
+          "priceCurrency": "SAR"
+        },
+        {
+          "@type": "Offer",
+          "name": "نقل عفش شقة 5 غرف وصالة من جدة للمدينة",
+          "price": "2400",
+          "priceCurrency": "SAR"
+        },
+        {
+          "@type": "Offer",
+          "name": "نقل عفش فيلا كاملة أو قصر من جدة للمدينة",
+          "price": "4200",
+          "priceCurrency": "SAR"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كم تستغرق رحلة نقل العفش من جدة إلى المدينة المنورة عبر طريق الهجرة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تستغرق رحلة الشاحنة من جدة إلى المدينة المنورة حوالي 4 إلى 5 ساعات عبر طريق الهجرة السريع (420 كم)، ويتم إنجاز الفك والتحميل بجدة صباحاً ثم التوصيل والتركيب الكامل بالمدينة المنورة في نفس اليوم."
           }
         },
         {
-          "@type": "Service",
-          "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#service",
-          "name": "خدمة نقل العفش من جدة إلى المدينة المنورة",
-          "serviceType": "Intercity Furniture Moving",
-          "provider": {
-            "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#movingcompany"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Jeddah" },
-            { "@type": "City", "name": "Medina" }
-          ],
-          "description": "خدمة نقل عفش وأثاث من جدة للمدينة المنورة شاملة الفك والتركيب والتغليف الخماسي مع التأمين الشامل وشاحنات دينا مغلقة عبر طريق الهجرة السريع.",
-          "url": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/"
+          "@type": "Question",
+          "name": "ما هي اسعار شركة نقل عفش من جدة الى المدينة المنورة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تبدأ أسعار نقل العفش من جدة للمدينة المنورة من 700 إلى 900 ريال للشقق الصغيرة والاستوديوهات، وتتراوح بين 1400 إلى 2600 ريال للشقق الكبيرة والفلل، وتعتمد على كمية العفش ونوع التغليف المطلوبة."
+          }
         },
         {
-          "@type": "WebPage",
-          "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#webpage",
-          "url": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/",
-          "name": "شركة نقل عفش من جدة الى المدينة 0540026747 | شركة القصر السعودي",
-          "description": "دليل وخدمات شركة نقل عفش من جدة إلى المدينة المنورة مع الفك والتركيب والتغليف وضمان السلامة 100%.",
-          "inLanguage": "ar-SA"
+          "@type": "Question",
+          "name": "هل تقدمون ضماناً كتابياً شاملاً لسلامة الأثاث أثناء الرحلة للمدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نقدم شهادة ضمان كتابية وضمان شامل ضد الكسر أو التلف أو الخدش طوال مسار الشحن من جدة إلى منزلك الجديد بالمدينة المنورة."
+          }
         },
         {
-          "@type": "BreadcrumbList",
-          "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "الرئيسية",
-              "item": "https://alqasr-alsueudi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "نقل العفش بين المدن",
-              "item": "https://alqasr-alsueudi.com/furniture-moving-between-jeddah-cities/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "شركة نقل عفش من جدة إلى المدينة المنورة",
-              "item": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/"
-            }
-          ]
+          "@type": "Question",
+          "name": "هل تشمل الخدمة فك العفش بجدة وإعادة تركيبه بالكامل بالمدينة المنورة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "بالتأكيد، يتولى فريق النجارين والفنيين المتخصصين فك غرف النوم والمطابخ والمكيفات بجدة، وإعادة تركيبها وتثبيتها بدقة بالغة بالمدينة المنورة."
+          }
         },
         {
-          "@type": "OfferCatalog",
-          "name": "أسعار نقل العفش من جدة إلى المدينة المنورة",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "نقل عفش شقة صغيرة / استوديو من جدة للمدينة",
-              "price": "800",
-              "priceCurrency": "SAR"
-            },
-            {
-              "@type": "Offer",
-              "name": "نقل عفش شقة 3 غرف وصالة من جدة للمدينة",
-              "price": "1500",
-              "priceCurrency": "SAR"
-            },
-            {
-              "@type": "Offer",
-              "name": "نقل عفش شقة 5 غرف وصالة من جدة للمدينة",
-              "price": "2400",
-              "priceCurrency": "SAR"
-            },
-            {
-              "@type": "Offer",
-              "name": "نقل عفش فيلا كاملة أو قصر من جدة للمدينة",
-              "price": "4200",
-              "priceCurrency": "SAR"
-            }
-          ]
+          "@type": "Question",
+          "name": "كيف يتم حماية العفش من حرارة الطريق الصحراوي (420 كم) بين جدة والمدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نستخدم شاحنات دينا مغلقة بالكامل ومبطنة من الداخل، مع تغليف الأثاث بـ 5 طبقات من البلاستيك الفقاعي والكرتون المقوى والنايلون الاستريتش لمنع وصول الأتربة والحرارة."
+          }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://alqasr-alsueudi.com/areas/jeddah-to-medina/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "كم تستغرق رحلة نقل العفش من جدة إلى المدينة المنورة عبر طريق الهجرة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تستغرق رحلة الشاحنة من جدة إلى المدينة المنورة حوالي 4 إلى 5 ساعات عبر طريق الهجرة السريع (420 كم)، ويتم إنجاز الفك والتحميل بجدة صباحاً ثم التوصيل والتركيب الكامل بالمدينة المنورة في نفس اليوم."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ما هي اسعار شركة نقل عفش من جدة الى المدينة المنورة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تبدأ أسعار نقل العفش من جدة للمدينة المنورة من 700 إلى 900 ريال للشقق الصغيرة والاستوديوهات، وتتراوح بين 1400 إلى 2600 ريال للشقق الكبيرة والفلل، وتعتمد على كمية العفش ونوع التغليف المطلوبة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تقدمون ضماناً كتابياً شاملاً لسلامة الأثاث أثناء الرحلة للمدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نقدم شهادة ضمان كتابية وضمان شامل ضد الكسر أو التلف أو الخدش طوال مسار الشحن من جدة إلى منزلك الجديد بالمدينة المنورة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تشمل الخدمة فك العفش بجدة وإعادة تركيبه بالكامل بالمدينة المنورة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "بالتأكيد، يتولى فريق النجارين والفنيين المتخصصين فك غرف النوم والمطابخ والمكيفات بجدة، وإعادة تركيبها وتثبيتها بدقة بالغة بالمدينة المنورة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف يتم حماية العفش من حرارة الطريق الصحراوي (420 كم) بين جدة والمدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نستخدم شاحنات دينا مغلقة بالكامل ومبطنة من الداخل، مع تغليف الأثاث بـ 5 طبقات من البلاستيك الفقاعي والكرتون المقوى والنايلون الاستريتش لمنع وصول الأتربة والحرارة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تخدمون جميع أحياء المدينة المنورة (كالعزيزية، العريض، قرب الحرم النبوي، الهجرة)؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نغطي كافة أحياء ومناطق المدينة المنورة كالعزيزية، العريض، الهجرة، باقدو، الحزام، الشظاة، الخالدية، العاقول، والأحياء المجاورة للحرم النبوي الشريف."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يتم نقل وتثبيت المكيفات السبلت والشباك والأجهزة الكهربائية بالمدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، يرافق طاقمنا فنيون متخصصون في فك المكيفات وتأمين غاز الفريون بجدة، ثم إعادة تركيبها واختبار كفاءة التبريد بمقر السكن بالمدينة المنورة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ما هي مواعيد وأوقات طلب دينا نقل عفش من جدة للمدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "خدماتنا متاحة على مدار 24 ساعة طوال أيام الأسبوع، ونستقبل طلبات النقل الفوري العاجل للتحرك خلال ساعة واحدة من الاتصال."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل توفرون خدمة تخزين العفش بجدة أو المدينة قبل التوصيل النهائي؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر مستودعات مؤمنة ومكيفة ومراقبة بالكاميرات في جدة والمدينة لحفظ الأثاث للفترات التي يرغب بها العميل قبل استلام منزله بمكة أو المدينة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف يتم التعامل مع غرف النوم الفاخرة وأثاث إيكيا أثناء الفك والشحن؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نستخدم نظام ترقيم القطع والأكياس الممغنطة لحفظ المفصلات والبراغي، ويقوم نجارونا المحترفون بتركيب الأثاث بالمدينة باستخدام الموازين المائية المتقدمة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل توفرون خدمة الونش الهيدروليكي لرفع العفش بالعمائر المرتفعة بالمدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر أوناش رفع هيدروليكية حديثة لتنزيل الأثاث الثقيل من مباني جدة ورفعه لسائر الأدوار العليا بالعمائر السكنية بالمدينة المنورة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يمكن نقل المكاتب والمؤسسات والشركات من جدة إلى المدينة المنورة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نقدم حلول نقل المقرات التجارية والمكاتب والشركات والمستشفيات مع تفكيك القواطع وتغليف أجهزة الكومبيوتر والملفات بعناية."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يمكن شحن أثاث مجمّع أو قطع محددة فقط من جدة للمدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نتيح خيار الشحن المجمّع للغرف المنفردة أو الأجهزة الكهربائية بسعر اقتصادي منخفض لتوفير التكاليف على العملاء."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ما هي الميزات التنافسية لشركة القصر السعودي في مسار جدة - المدينة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تتميز شركة القصر السعودي بالس السرعة في نفس اليوم، الشاحنات المغلقة الحديثة، الضمان المكتوب، والأسعار الاقتصادية المنافسة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف يمكنني طلب وحجز شركة نقل عفش من جدة الى المدينة فوراً؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يمكنك الاتصال المباشر برقم الهاتف 0540026747، أو التواصل عبر الواتساب للحصول على معاينة مجانية وخصم يصل إلى 30%."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "هل تخدمون جميع أحياء المدينة المنورة (كالعزيزية، العريض، قرب الحرم النبوي، الهجرة)؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نغطي كافة أحياء ومناطق المدينة المنورة كالعزيزية، العريض، الهجرة، باقدو، الحزام، الشظاة، الخالدية، العاقول، والأحياء المجاورة للحرم النبوي الشريف."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يتم نقل وتثبيت المكيفات السبلت والشباك والأجهزة الكهربائية بالمدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، يرافق طاقمنا فنيون متخصصون في فك المكيفات وتأمين غاز الفريون بجدة، ثم إعادة تركيبها واختبار كفاءة التبريد بمقر السكن بالمدينة المنورة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي مواعيد وأوقات طلب دينا نقل عفش من جدة للمدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "خدماتنا متاحة على مدار 24 ساعة طوال أيام الأسبوع، ونستقبل طلبات النقل الفوري العاجل للتحرك خلال ساعة واحدة من الاتصال."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل توفرون خدمة تخزين العفش بجدة أو المدينة قبل التوصيل النهائي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر مستودعات مؤمنة ومكيفة ومراقبة بالكاميرات في جدة والمدينة لحفظ الأثاث للفترات التي يرغب بها العميل قبل استلام منزله بمكة أو المدينة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يتم التعامل مع غرف النوم الفاخرة وأثاث إيكيا أثناء الفك والشحن؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نستخدم نظام ترقيم القطع والأكياس الممغنطة لحفظ المفصلات والبراغي، ويقوم نجارونا المحترفون بتركيب الأثاث بالمدينة باستخدام الموازين المائية المتقدمة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل توفرون خدمة الونش الهيدروليكي لرفع العفش بالعمائر المرتفعة بالمدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر أوناش رفع هيدروليكية حديثة لتنزيل الأثاث الثقيل من مباني جدة ورفعه لسائر الأدوار العليا بالعمائر السكنية بالمدينة المنورة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن نقل المكاتب والمؤسسات والشركات من جدة إلى المدينة المنورة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نقدم حلول نقل المقرات التجارية والمكاتب والشركات والمستشفيات مع تفكيك القواطع وتغليف أجهزة الكومبيوتر والملفات بعناية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن شحن أثاث مجمّع أو قطع محددة فقط من جدة للمدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نتيح خيار الشحن المجمّع للغرف المنفردة أو الأجهزة الكهربائية بسعر اقتصادي منخفض لتوفير التكاليف على العملاء."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي الميزات التنافسية لشركة القصر السعودي في مسار جدة - المدينة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تتميز شركة القصر السعودي بالس السرعة في نفس اليوم، الشاحنات المغلقة الحديثة، الضمان المكتوب، والأسعار الاقتصادية المنافسة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يمكنني طلب وحجز شركة نقل عفش من جدة الى المدينة فوراً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكنك الاتصال المباشر برقم الهاتف 0540026747، أو التواصل عبر الواتساب للحصول على معاينة مجانية وخصم يصل إلى 30%."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * {

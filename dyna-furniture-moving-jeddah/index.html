@@ -43,137 +43,143 @@
 
     <!-- Schema Structured Data (JSON-LD) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "MovingCompany",
+      "@id": "https://alqasr-alsueudi.com/#movingcompany",
+      "name": "شركة القصر السعودي لنقل العفش بجدة",
+      "url": "https://alqasr-alsueudi.com/",
+      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+      "image": "https://alqasr-alsueudi.com/assets/img/furniture-moving-trucks-in-jeddah.webp",
+      "telephone": "+966540026747",
+      "priceRange": "SAR 200 - 1500",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع حراء، حي المروة",
+        "addressLocality": "Jeddah",
+        "addressRegion": "Makkah Province",
+        "postalCode": "23541",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.6167",
+        "longitude": "39.1564"
+      },
+      "areaServed": [
         {
-          "@type": "MovingCompany",
-          "@id": "https://alqasr-alsueudi.com/#company",
-          "name": "شركة القصر السعودي لنقل العفش بجدة",
-          "url": "https://alqasr-alsueudi.com/",
-          "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-          "image": "https://alqasr-alsueudi.com/assets/img/furniture-moving-trucks-in-jeddah.webp",
-          "telephone": "+966540026747",
-          "priceRange": "SAR 200 - 1500",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "شارع حراء، حي المروة",
-            "addressLocality": "Jeddah",
-            "addressRegion": "Makkah Province",
-            "postalCode": "23541",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "21.6167",
-            "longitude": "39.1564"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Jeddah" },
-            { "@type": "AdministrativeArea", "name": "Makkah Province" }
-          ]
+          "@type": "City",
+          "name": "Jeddah"
         },
         {
-          "@type": "Service",
-          "@id": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/#service",
-          "name": "خدمة دينا نقل عفش جدة",
-          "serviceType": "Dyna Truck Furniture Moving Service in Jeddah",
-          "provider": {
-            "@id": "https://alqasr-alsueudi.com/#company"
-          },
-          "areaServed": {
-            "@type": "City",
-            "name": "Jeddah"
-          },
-          "url": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/",
-          "description": "تأجير وتشغيل شاحنات دينا لنقل العفش بجدة بمختلف الأحجام (جامبو، عادية، مجهزة بمصعد هيدروليكي) بصناديق مقفلة عازلة للغبار ومبطنة لحماية الأثاث أثناء الانتقال داخل كافة أحياء جدة.",
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "SAR",
-            "price": "200",
-            "availability": "https://schema.org/InStock",
-            "url": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/"
+          "@type": "AdministrativeArea",
+          "name": "Makkah Province"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/#service",
+      "name": "خدمة دينا نقل عفش جدة",
+      "serviceType": "Dyna Truck Furniture Moving Service in Jeddah",
+      "provider": {
+        "@id": "https://alqasr-alsueudi.com/#movingcompany"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Jeddah"
+      },
+      "url": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/",
+      "description": "تأجير وتشغيل شاحنات دينا لنقل العفش بجدة بمختلف الأحجام (جامبو، عادية، مجهزة بمصعد هيدروليكي) بصناديق مقفلة عازلة للغبار ومبطنة لحماية الأثاث أثناء الانتقال داخل كافة أحياء جدة.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "SAR",
+        "price": "200",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alqasr-alsueudi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "خدماتنا",
+          "item": "https://alqasr-alsueudi.com/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "دينا نقل عفش جدة",
+          "item": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هي مواصفات دينا نقل العفش لدى شركة القصر السعودي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "شاحناتنا من طرازات إيسوزو ودينا جامبو حديثة، مزودة بصناديق مقفلة معزولة حرارياً بطول 4.5 إلى 6 أمتار، ومبطنة من الداخل بألواح لباد ومطاط لمنع الاحتكاك، مع قنوات وأحزمة راتشيت لتثبيت كل قطعة بإحكام، وتتوفر رافعات هيدروليكية خلفية للأوزان الثقيلة."
           }
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "الرئيسية",
-              "item": "https://alqasr-alsueudi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "خدماتنا",
-              "item": "https://alqasr-alsueudi.com/services/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "دينا نقل عفش جدة",
-              "item": "https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/"
-            }
-          ]
+          "@type": "Question",
+          "name": "كم سعر مشوار دينا نقل عفش داخل أحياء جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يبدأ سعر مشوار الدينا مع السائق فقط من 200 إلى 250 ريال، بينما تبدأ باقات الدينا الشاملة للعمال المتخصصين والتحميل والتنزيل من 350 إلى 550 ريال للشقق الصغيرة، وتصل إلى 800 - 1200 ريال للباقات الشاملة مع الفك والتغليف والتركيب الكامل."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "ما هي مواصفات دينا نقل العفش لدى شركة القصر السعودي؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "شاحناتنا من طرازات إيسوزو ودينا جامبو حديثة، مزودة بصناديق مقفلة معزولة حرارياً بطول 4.5 إلى 6 أمتار، ومبطنة من الداخل بألواح لباد ومطاط لمنع الاحتكاك، مع قنوات وأحزمة راتشيت لتثبيت كل قطعة بإحكام، وتتوفر رافعات هيدروليكية خلفية للأوزان الثقيلة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كم سعر مشوار دينا نقل عفش داخل أحياء جدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يبدأ سعر مشوار الدينا مع السائق فقط من 200 إلى 250 ريال، بينما تبدأ باقات الدينا الشاملة للعمال المتخصصين والتحميل والتنزيل من 350 إلى 550 ريال للشقق الصغيرة، وتصل إلى 800 - 1200 ريال للباقات الشاملة مع الفك والتغليف والتركيب الكامل."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يمكن حجز الدينا بدون عمالة لنقل الأثاث؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم بكل تأكيد، نوفر خيار تأجير الدينا مع سائق محترف مرخص فقط لمن يرغب بنقل أغراضه بنفسه أو لديه عمالة خاصة به، مع التزام تام بالمواعيد ونظافة الصندوق."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل الدينا مناسبة لنقل فيلا أو شقة كبيرة في رحلة واحدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تتسع الدينا الجامبو ذات الصندوق 6 أمتار (سعة تقارب 30 متر مكعب) لشقة مكونة من 3 إلى 4 غرف بالكامل. أما للفلل الكبيرة والمنازل الواسعة، نوفر أسطولاً من شاحنتين أو أكثر يعملان بالتوازي لإنجاز عملية النقل في يوم واحد دون أي تأخير."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ما الفرق بين دينا نقل العفش المغلقة ودباب أو وانيت النقل؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "الدينا المغلقة تحمي أثاثك تماماً من غبار جدة ورطوبتها وحرارة الشمس المباشرة وتمنع السقوط، وتتسع لأثاث منزل كامل. بينما الدباب أو الوانيت يكون مفتوحاً وصغيراً جداً ولا يصلح إلا لنقل قطعة فردية كغسالة أو ثلاجة، ويعرض المفروشات لعوامل الجو ومخاطر الطريق."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف أحجز دينا نقل عفش في جدة وأضمن وصولها في موعد محدد؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يمكنك الحجز الفوري بالاتصال المباشر على 0540026747 أو عبر الواتساب. نحدد معك حي التحميل والتنزيل ونوع الأثاث، ونرسل لك الدينا المجهزة خلال 30 إلى 45 دقيقة في أي حي من أحياء جدة."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "هل يمكن حجز الدينا بدون عمالة لنقل الأثاث؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم بكل تأكيد، نوفر خيار تأجير الدينا مع سائق محترف مرخص فقط لمن يرغب بنقل أغراضه بنفسه أو لديه عمالة خاصة به، مع التزام تام بالمواعيد ونظافة الصندوق."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل الدينا مناسبة لنقل فيلا أو شقة كبيرة في رحلة واحدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تتسع الدينا الجامبو ذات الصندوق 6 أمتار (سعة تقارب 30 متر مكعب) لشقة مكونة من 3 إلى 4 غرف بالكامل. أما للفلل الكبيرة والمنازل الواسعة، نوفر أسطولاً من شاحنتين أو أكثر يعملان بالتوازي لإنجاز عملية النقل في يوم واحد دون أي تأخير."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين دينا نقل العفش المغلقة ودباب أو وانيت النقل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "الدينا المغلقة تحمي أثاثك تماماً من غبار جدة ورطوبتها وحرارة الشمس المباشرة وتمنع السقوط، وتتسع لأثاث منزل كامل. بينما الدباب أو الوانيت يكون مفتوحاً وصغيراً جداً ولا يصلح إلا لنقل قطعة فردية كغسالة أو ثلاجة، ويعرض المفروشات لعوامل الجو ومخاطر الطريق."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف أحجز دينا نقل عفش في جدة وأضمن وصولها في موعد محدد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكنك الحجز الفوري بالاتصال المباشر على 0540026747 أو عبر الواتساب. نحدد معك حي التحميل والتنزيل ونوع الأثاث، ونرسل لك الدينا المجهزة خلال 30 إلى 45 دقيقة في أي حي من أحياء جدة."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * { font-family: 'Cairo', sans-serif; }

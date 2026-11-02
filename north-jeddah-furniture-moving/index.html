@@ -43,129 +43,135 @@
 
     <!-- Schema Structured Data (JSON-LD) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "MovingCompany",
+      "@id": "https://alqasr-alsueudi.com/#movingcompany",
+      "name": "شركة القصر السعودي لنقل العفش - فرع شمال جدة",
+      "url": "https://alqasr-alsueudi.com/",
+      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+      "image": "https://alqasr-alsueudi.com/assets/img/north-jeddah-furniture-moving.webp",
+      "telephone": "+966540026747",
+      "priceRange": "SAR 350 - 3500",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "طريق الملك عبد العزيز، حي الشاطئ",
+        "addressLocality": "Jeddah",
+        "addressRegion": "Makkah Province",
+        "postalCode": "23513",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.6167",
+        "longitude": "39.1564"
+      },
+      "areaServed": [
         {
-          "@type": "MovingCompany",
-          "@id": "https://alqasr-alsueudi.com/#company",
-          "name": "شركة القصر السعودي لنقل العفش - فرع شمال جدة",
-          "url": "https://alqasr-alsueudi.com/",
-          "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-          "image": "https://alqasr-alsueudi.com/assets/img/north-jeddah-furniture-moving.webp",
-          "telephone": "+966540026747",
-          "priceRange": "SAR 350 - 3500",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "طريق الملك عبد العزيز، حي الشاطئ",
-            "addressLocality": "Jeddah",
-            "addressRegion": "Makkah Province",
-            "postalCode": "23513",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "21.6167",
-            "longitude": "39.1564"
-          },
-          "areaServed": [
-            { "@type": "AdministrativeArea", "name": "North Jeddah" },
-            { "@type": "City", "name": "Jeddah" }
-          ]
+          "@type": "AdministrativeArea",
+          "name": "North Jeddah"
         },
         {
-          "@type": "Service",
-          "@id": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/#service",
-          "name": "خدمة نقل عفش شمال جدة",
-          "serviceType": "North Jeddah Moving Service",
-          "provider": {
-            "@id": "https://alqasr-alsueudi.com/#company"
-          },
-          "areaServed": {
-            "@type": "AdministrativeArea",
-            "name": "North Jeddah"
-          },
-          "url": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/",
-          "description": "خدمات نقل العفش وفك وتركيب وتغليف الأثاث ونقل الفلل والشقق والمكاتب في كافة أحياء شمال جدة (أبحر، الشاطئ، البساتين، المحمدية، النعيم، الصفا، المروة، والحمدانية) بسيارات مقفلة معتمدة.",
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "SAR",
-            "price": "350",
-            "availability": "https://schema.org/InStock",
-            "url": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/"
+          "@type": "City",
+          "name": "Jeddah"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/#service",
+      "name": "خدمة نقل عفش شمال جدة",
+      "serviceType": "North Jeddah Moving Service",
+      "provider": {
+        "@id": "https://alqasr-alsueudi.com/#movingcompany"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "North Jeddah"
+      },
+      "url": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/",
+      "description": "خدمات نقل العفش وفك وتركيب وتغليف الأثاث ونقل الفلل والشقق والمكاتب في كافة أحياء شمال جدة (أبحر، الشاطئ، البساتين، المحمدية، النعيم، الصفا، المروة، والحمدانية) بسيارات مقفلة معتمدة.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "SAR",
+        "price": "350",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alqasr-alsueudi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "خدماتنا",
+          "item": "https://alqasr-alsueudi.com/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "نقل عفش شمال جدة",
+          "item": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كم يستغرق وصول فريق نقل العفش في أحياء شمال جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "بفضل تمركز شاحناتنا بالقرب من المحاور الرئيسية (طريق الملك، طريق المدينة، وطريق الحرمين)، نضمن وصول سيارات الدينا والعمال إلى باب منزلك في أي حي بشمال جدة خلال 30 إلى 45 دقيقة فقط."
           }
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "الرئيسية",
-              "item": "https://alqasr-alsueudi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "خدماتنا",
-              "item": "https://alqasr-alsueudi.com/services/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "نقل عفش شمال جدة",
-              "item": "https://alqasr-alsueudi.com/north-jeddah-furniture-moving/"
-            }
-          ]
+          "@type": "Question",
+          "name": "ما هي أسعار نقل العفش في شمال جدة 2026؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تبدأ أسعار نقل العفش للشقق الصغيرة (1-2 غرفة) من 350 إلى 550 ريال، والشقق المتوسطة (3-4 غرف) من 750 إلى 1100 ريال، بينما تبدأ باقات نقل الفلل والقصور الكبيرة من 1800 إلى 3200 ريال شاملة الفك والتغليف والتركيب والضمان."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "كم يستغرق وصول فريق نقل العفش في أحياء شمال جدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "بفضل تمركز شاحناتنا بالقرب من المحاور الرئيسية (طريق الملك، طريق المدينة، وطريق الحرمين)، نضمن وصول سيارات الدينا والعمال إلى باب منزلك في أي حي بشمال جدة خلال 30 إلى 45 دقيقة فقط."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ما هي أسعار نقل العفش في شمال جدة 2026؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تبدأ أسعار نقل العفش للشقق الصغيرة (1-2 غرفة) من 350 إلى 550 ريال، والشقق المتوسطة (3-4 غرف) من 750 إلى 1100 ريال، بينما تبدأ باقات نقل الفلل والقصور الكبيرة من 1800 إلى 3200 ريال شاملة الفك والتغليف والتركيب والضمان."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل توفرون ونش هيدروليكي للأبراج والشقق المرتفعة بشمال جدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر أوناش رفع أثاث هيدروليكية تصل حتى الدور 25 لرفع وتنزيل الأثاث في أبراج الكورنيش وأبحر والشاطئ بكل أمان دون المرور بالمصاعد أو السلالم الضيقة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف تحمون الأثاث من رطوبة البحر وأملاحه في أحياء أبحر والشاطئ؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نستخدم تغليفاً ثلاثي الطبقات يشمل استرتش حراري عازل للرطوبة والأملاح، وطبقات بابلز هوائية سميكة تحمي الأخشاب الطبيعية والأجهزة من الهواء المشبع برذاذ البحر."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تقدمون ضماناً رسمياً وتأميناً على منقولات الفلل والمنازل؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نقدم عقداً رسمياً موثقاً يتضمن كشف حصر وجرد لكافة المنقولات مع ضمان خطي شامل يتحمل الإصلاح أو التعويض الفوري في حالة حدوث أي خدش أو كسر."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "هل توفرون ونش هيدروليكي للأبراج والشقق المرتفعة بشمال جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر أوناش رفع أثاث هيدروليكية تصل حتى الدور 25 لرفع وتنزيل الأثاث في أبراج الكورنيش وأبحر والشاطئ بكل أمان دون المرور بالمصاعد أو السلالم الضيقة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف تحمون الأثاث من رطوبة البحر وأملاحه في أحياء أبحر والشاطئ؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نستخدم تغليفاً ثلاثي الطبقات يشمل استرتش حراري عازل للرطوبة والأملاح، وطبقات بابلز هوائية سميكة تحمي الأخشاب الطبيعية والأجهزة من الهواء المشبع برذاذ البحر."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تقدمون ضماناً رسمياً وتأميناً على منقولات الفلل والمنازل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نقدم عقداً رسمياً موثقاً يتضمن كشف حصر وجرد لكافة المنقولات مع ضمان خطي شامل يتحمل الإصلاح أو التعويض الفوري في حالة حدوث أي خدش أو كسر."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * { font-family: 'Cairo', sans-serif; }

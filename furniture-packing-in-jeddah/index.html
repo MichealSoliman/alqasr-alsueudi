@@ -45,84 +45,101 @@
     <!-- Schema Structured Data (JSON-LD) -->
     <!-- 1. LocalBusiness / MovingCompany Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  "@id": "https://alqasr-alsueudi.com/#movingcompany",
+  "name": "شركة القصر السعودي - تغليف العفش بجدة",
+  "url": "https://alqasr-alsueudi.com/",
+  "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+  "image": "https://alqasr-alsueudi.com/assets/img/furniture-packaging.webp",
+  "telephone": "+966540026747",
+  "priceRange": "SAR 150 - SAR 1200",
+  "description": "شركة متخصصة في تغليف العفش والأثاث بجدة باستخدام كراتين 5 طبقات، بلاستيك فقاعي، فوم زوايا، وعزل مخصص للأجهزة والشاشات والمجالس بالضمان الشامل.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "طريق الملك فهد، حي الروضة",
+    "addressLocality": "Jeddah",
+    "addressRegion": "Makkah Province",
+    "postalCode": "23432",
+    "addressCountry": "SA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "21.543333",
+    "longitude": "39.172778"
+  },
+  "openingHoursSpecification": [
     {
-      "@context": "https://schema.org",
-      "@type": "MovingCompany",
-      "@id": "https://alqasr-alsueudi.com/#business",
-      "name": "شركة القصر السعودي - تغليف العفش بجدة",
-      "url": "https://alqasr-alsueudi.com/furniture-packing-in-jeddah/",
-      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-      "image": "https://alqasr-alsueudi.com/assets/img/furniture-packaging.webp",
-      "telephone": "+966540026747",
-      "priceRange": "SAR 150 - SAR 1200",
-      "description": "شركة متخصصة في تغليف العفش والأثاث بجدة باستخدام كراتين 5 طبقات، بلاستيك فقاعي، فوم زوايا، وعزل مخصص للأجهزة والشاشات والمجالس بالضمان الشامل.",
-      "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "طريق الملك فهد، حي الروضة",
-          "addressLocality": "Jeddah",
-          "addressRegion": "Makkah Province",
-          "postalCode": "23432",
-          "addressCountry": "SA"
-      },
-      "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "21.543333",
-          "longitude": "39.172778"
-      },
-      "openingHoursSpecification": [
-          {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-              "opens": "00:00",
-              "closes": "23:59"
-          }
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
       ],
-      "areaServed": [
-          {"@type": "City", "name": "Jeddah"},
-          {"@type": "AdministrativeArea", "name": "North Jeddah"},
-          {"@type": "AdministrativeArea", "name": "Central Jeddah"}
-      ],
-      "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "192",
-          "bestRating": "5",
-          "worstRating": "1"
-      }
+      "opens": "00:00",
+      "closes": "23:59"
     }
-    </script>
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Jeddah"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "North Jeddah"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Central Jeddah"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "192",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
 
     <!-- 2. Service Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": "https://alqasr-alsueudi.com/furniture-packing-in-jeddah/#service",
-      "name": "خدمة تغليف العفش والأثاث بجدة",
-      "serviceType": "Furniture Packing, Wrapping, and Crating Services in Jeddah",
-      "provider": {
-        "@type": "MovingCompany",
-        "@id": "https://alqasr-alsueudi.com/#business",
-        "name": "شركة القصر السعودي لنقل العفش بجدة",
-        "telephone": "+966540026747",
-        "url": "https://alqasr-alsueudi.com/"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Jeddah"
-      },
-      "image": "https://alqasr-alsueudi.com/assets/img/furniture-packaging.webp",
-      "url": "https://alqasr-alsueudi.com/furniture-packing-in-jeddah/",
-      "description": "تغليف متكامل لكافة محتويات المنازل والشركات بجدة بمواد عازلة ضد الرطوبة والصدمات والكسر، مع كراتين قوية وتقنيات تغليف أوروبية.",
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "SAR",
-        "lowPrice": "150",
-        "highPrice": "1200",
-        "offerCount": "6"
-      }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://alqasr-alsueudi.com/furniture-packing-in-jeddah/#service",
+  "name": "خدمة تغليف العفش والأثاث بجدة",
+  "serviceType": "Furniture Packing, Wrapping, and Crating Services in Jeddah",
+  "provider": {
+    "@type": "MovingCompany",
+    "@id": "https://alqasr-alsueudi.com/#movingcompany",
+    "name": "شركة القصر السعودي لنقل العفش بجدة",
+    "telephone": "+966540026747",
+    "url": "https://alqasr-alsueudi.com/"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Jeddah"
+  },
+  "image": "https://alqasr-alsueudi.com/assets/img/furniture-packaging.webp",
+  "url": "https://alqasr-alsueudi.com/furniture-packing-in-jeddah/",
+  "description": "تغليف متكامل لكافة محتويات المنازل والشركات بجدة بمواد عازلة ضد الرطوبة والصدمات والكسر، مع كراتين قوية وتقنيات تغليف أوروبية.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "SAR",
+    "lowPrice": "150",
+    "highPrice": "1200",
+    "offerCount": "6"
+  }
+}
+</script>
 
     <!-- 3. WebPage Schema -->
     <script type="application/ld+json">

@@ -43,129 +43,135 @@
 
     <!-- Schema Structured Data (JSON-LD) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://alqasr-alsueudi.com/#movingcompany",
+      "name": "شركة القصر السعودي لنقل الأجهزة الكهربائية بجدة",
+      "url": "https://alqasr-alsueudi.com/",
+      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+      "image": "https://alqasr-alsueudi.com/assets/img/moving-electrical-appliances-in-jeddah.webp",
+      "telephone": "+966540026747",
+      "priceRange": "SAR 100 - 800",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع حراء، حي المروة",
+        "addressLocality": "Jeddah",
+        "addressRegion": "Makkah Province",
+        "postalCode": "23541",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.6167",
+        "longitude": "39.1564"
+      },
+      "areaServed": [
         {
-          "@type": "HomeAndConstructionBusiness",
-          "@id": "https://alqasr-alsueudi.com/#company",
-          "name": "شركة القصر السعودي لنقل الأجهزة الكهربائية بجدة",
-          "url": "https://alqasr-alsueudi.com/",
-          "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-          "image": "https://alqasr-alsueudi.com/assets/img/moving-electrical-appliances-in-jeddah.webp",
-          "telephone": "+966540026747",
-          "priceRange": "SAR 100 - 800",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "شارع حراء، حي المروة",
-            "addressLocality": "Jeddah",
-            "addressRegion": "Makkah Province",
-            "postalCode": "23541",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "21.6167",
-            "longitude": "39.1564"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Jeddah" },
-            { "@type": "AdministrativeArea", "name": "Makkah Province" }
-          ]
+          "@type": "City",
+          "name": "Jeddah"
         },
         {
-          "@type": "Service",
-          "@id": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/#service",
-          "name": "خدمة نقل الأجهزة الكهربائية والمكيفات بجدة",
-          "serviceType": "Home Appliance and Air Conditioner Moving Service in Jeddah",
-          "provider": {
-            "@id": "https://alqasr-alsueudi.com/#company"
-          },
-          "areaServed": {
-            "@type": "City",
-            "name": "Jeddah"
-          },
-          "url": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/",
-          "description": "نقل وفك وتركيب وتغليف الثلاجات، الغسالات، الأفران، والمكيفات السبليت والشباك والشاشات الذكية بجدة بواسطة فنيي تبريد وتكييف معتمدين مع الضمان وتأمين الحمولات.",
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "SAR",
-            "price": "100",
-            "availability": "https://schema.org/InStock",
-            "url": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/"
+          "@type": "AdministrativeArea",
+          "name": "Makkah Province"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/#service",
+      "name": "خدمة نقل الأجهزة الكهربائية والمكيفات بجدة",
+      "serviceType": "Home Appliance and Air Conditioner Moving Service in Jeddah",
+      "provider": {
+        "@id": "https://alqasr-alsueudi.com/#movingcompany"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Jeddah"
+      },
+      "url": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/",
+      "description": "نقل وفك وتركيب وتغليف الثلاجات، الغسالات، الأفران، والمكيفات السبليت والشباك والشاشات الذكية بجدة بواسطة فنيي تبريد وتكييف معتمدين مع الضمان وتأمين الحمولات.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "SAR",
+        "price": "100",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alqasr-alsueudi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "خدماتنا",
+          "item": "https://alqasr-alsueudi.com/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "نقل الأجهزة الكهربائية بجدة",
+          "item": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كيف يتم نقل الثلاجة بأمان دون حرق الكمبروسور؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتم نقل الثلاجات في الوضع الرأسي (Upright) فقط مع ميلان لا يتعدى 30 درجة لتجنب تسرب زيت التزييت من الضاغط إلى مواسير غاز الفريون. كما نلزم العميل بالانتظار لمدة 4 إلى 6 ساعات قبل توصيل التيار الكهربائي بعد النقل لاستقرار الزيوت."
           }
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "الرئيسية",
-              "item": "https://alqasr-alsueudi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "خدماتنا",
-              "item": "https://alqasr-alsueudi.com/services/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "نقل الأجهزة الكهربائية بجدة",
-              "item": "https://alqasr-alsueudi.com/moving-electrical-appliances-in-jeddah/"
-            }
-          ]
+          "@type": "Question",
+          "name": "هل تشمل خدمة نقل المكيفات فك الغاز وإعادة شحنه؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، يقوم فنيو التكييف بحبس غاز الفريون بالكامل داخل الكمبروسور الخارجي (Pump-Down) قبل فك المواسير النحاسية لمنع تسربه، ثم إعادة تركيب الوحدة الداخلية والخارجية وضبط المانيفولد واختبار التبريد بعد التركيب."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "كيف يتم نقل الثلاجة بأمان دون حرق الكمبروسور؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يتم نقل الثلاجات في الوضع الرأسي (Upright) فقط مع ميلان لا يتعدى 30 درجة لتجنب تسرب زيت التزييت من الضاغط إلى مواسير غاز الفريون. كما نلزم العميل بالانتظار لمدة 4 إلى 6 ساعات قبل توصيل التيار الكهربائي بعد النقل لاستقرار الزيوت."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تشمل خدمة نقل المكيفات فك الغاز وإعادة شحنه؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، يقوم فنيو التكييف بحبس غاز الفريون بالكامل داخل الكمبروسور الخارجي (Pump-Down) قبل فك المواسير النحاسية لمنع تسربه، ثم إعادة تركيب الوحدة الداخلية والخارجية وضبط المانيفولد واختبار التبريد بعد التركيب."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف تحمون حوض الغسالة الأوتوماتيك من الكسر أثناء النقل؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نقوم بتركيب براغي النقل الأصلية (Transit Bolts) خلف الغسالة لتثبيت الحلة المعلقة بإحكام ومنعها من الارتجاج أو كسر المساعدات على مطبات الطريق، مع تفريغ المياه المتبقية من فلتر الطلمبة وتغليف الهيكل ببابلز 3 طبقات."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كم سعر نقل وتركيب مكيف سبليت داخل جدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "يبدأ سعر فك ونقل وتركيب مكيف السبليت من 180 إلى 250 ريال للوحدة شاملة فك الغاز والنقل والتركيب، مع توفير عروض خاصة للباقات المتعددة (3 مكيفات فأكثر)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تضمنون سلامة الشاشات المنحنية والشاشات الذكية الكبيرة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر صناديق كرتونية خشبية مبطنة بالرغوة المضادة للشحنات الكهربائية (Anti-Static Foam) لحماية شاشات OLED وQLED من الصدمات والضغط السطحي مع تثبيتها رأسياً داخل الشاحنة."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "كيف تحمون حوض الغسالة الأوتوماتيك من الكسر أثناء النقل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نقوم بتركيب براغي النقل الأصلية (Transit Bolts) خلف الغسالة لتثبيت الحلة المعلقة بإحكام ومنعها من الارتجاج أو كسر المساعدات على مطبات الطريق، مع تفريغ المياه المتبقية من فلتر الطلمبة وتغليف الهيكل ببابلز 3 طبقات."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم سعر نقل وتركيب مكيف سبليت داخل جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يبدأ سعر فك ونقل وتركيب مكيف السبليت من 180 إلى 250 ريال للوحدة شاملة فك الغاز والنقل والتركيب، مع توفير عروض خاصة للباقات المتعددة (3 مكيفات فأكثر)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تضمنون سلامة الشاشات المنحنية والشاشات الذكية الكبيرة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر صناديق كرتونية خشبية مبطنة بالرغوة المضادة للشحنات الكهربائية (Anti-Static Foam) لحماية شاشات OLED وQLED من الصدمات والضغط السطحي مع تثبيتها رأسياً داخل الشاحنة."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * { font-family: 'Cairo', sans-serif; }
