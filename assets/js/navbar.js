@@ -24,13 +24,15 @@
                     display: block !important;
                 }
                 header #mobile-menu-btn,
-                .site-header #mobile-menu-btn,
-                header .lg\\:hidden,
-                .site-header .lg\\:hidden {
+                .site-header #mobile-menu-btn {
                     display: none !important;
                 }
                 header #mobile-menu,
-                .site-header #mobile-menu {
+                .site-header #mobile-menu,
+                header #mobile-menu.hidden,
+                .site-header #mobile-menu.hidden,
+                header #mobile-menu:not(.hidden),
+                .site-header #mobile-menu:not(.hidden) {
                     display: none !important;
                 }
                 header .hidden.sm\\:inline-flex,
@@ -39,6 +41,8 @@
                 }
 
                 /* Mega dropdown centering and responsiveness */
+                header .mega-dropdown,
+                .site-header .mega-dropdown,
                 header .group > div,
                 .site-header .group > div {
                     position: absolute !important;
@@ -80,15 +84,33 @@
                     display: none !important;
                 }
                 header #mobile-menu-btn,
-                .site-header #mobile-menu-btn,
-                header .lg\\:hidden,
-                .site-header .lg\\:hidden {
+                .site-header #mobile-menu-btn {
                     display: flex !important;
+                }
+                header #mobile-menu.hidden,
+                .site-header #mobile-menu.hidden {
+                    display: none !important;
                 }
                 header #mobile-menu:not(.hidden),
                 .site-header #mobile-menu:not(.hidden) {
                     display: block !important;
+                    width: 100% !important;
+                    clear: both !important;
                     animation: navbarSlideDown 0.25s ease-out forwards;
+                }
+                header #mobile-menu ul,
+                .site-header #mobile-menu ul {
+                    width: 100% !important;
+                    display: block !important;
+                }
+                header #mobile-menu li,
+                .site-header #mobile-menu li {
+                    width: 100% !important;
+                    display: block !important;
+                }
+                header #mobile-menu a,
+                .site-header #mobile-menu a {
+                    width: 100% !important;
                 }
             }
 
@@ -120,6 +142,14 @@
         const servicesBtn = document.getElementById('mobile-services-btn');
         const servicesList = document.getElementById('mobile-services-list');
         const header = document.querySelector('.site-header') || document.querySelector('header');
+
+        if (mobileMenuBtn && mobileMenuBtn.dataset.navbarBound === 'true') {
+            return;
+        }
+        if (mobileMenuBtn) {
+            mobileMenuBtn.dataset.navbarBound = 'true';
+        }
+        window.__ALQASR_NAVBAR_INITIALIZED__ = true;
 
         // قائمة الموبايل الرئيسية
         if (mobileMenuBtn && mobileMenu) {
