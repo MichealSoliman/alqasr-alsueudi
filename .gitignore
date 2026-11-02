@@ -1,0 +1,8 @@
+node_modules/
+assets/img_backup/
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json

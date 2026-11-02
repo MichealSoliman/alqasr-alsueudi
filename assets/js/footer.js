@@ -338,6 +338,7 @@
                 <a href="${root}areas/hayu-alhamdania/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الحمدانية</a>
                 <a href="${root}areas/hayu-alrawda/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الروضة</a>
                 <a href="${root}areas/hayu-obhur-al-shamaliya/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش أبحر الشمالية</a>
+                <a href="${root}areas/hayu-albawadi/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش البوادي</a>
                 <a href="${root}areas/hayu-almarwa/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش المروة</a>
                 <a href="${root}areas/hayu-alsalama/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش السلامة</a>
                 <a href="${root}areas/hayu-alnaeim/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش النعيم</a>
@@ -346,9 +347,28 @@
                 <a href="${root}areas/hayu-aleazizia/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش العزيزية</a>
                 <a href="${root}areas/hayu-alnasim/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش النسيم</a>
                 <a href="${root}areas/hayu-alrehab/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الرحاب</a>
+                <a href="${root}areas/hayu-alhamraa/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الحمراء</a>
+                <a href="${root}areas/hayu-alfayha/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الفيحاء</a>
+                <a href="${root}areas/hayu-aljamiah/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الجامعة</a>
+                <a href="${root}areas/hayu-alnahda/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش النهضة</a>
+                <a href="${root}areas/hayu-alnakhil/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش النخيل</a>
+                <a href="${root}areas/hayu-alrabwah/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الربوة</a>
+                <a href="${root}areas/hayu-alruwais/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الرويس</a>
+                <a href="${root}areas/hayu-mushrifah/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش مشرفة</a>
+                <a href="${root}areas/jeddah-to-safa/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الصفا</a>
+                <a href="${root}areas/jeddah-to-alshatea/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش الشاطئ</a>
                 <a href="${root}areas/jeddah-to-riyadh/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى الرياض</a>
                 <a href="${root}areas/jeddah-to-dammam/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى الدمام</a>
                 <a href="${root}areas/jeddah-to-makkah/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى مكة</a>
+                <a href="${root}areas/jeddah-to-medina/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى المدينة</a>
+                <a href="${root}areas/jeddah-to-taif/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى الطائف</a>
+                <a href="${root}areas/jeddah-to-tabuk/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى تبوك</a>
+                <a href="${root}areas/jeddah-to-khobar/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى الخبر</a>
+                <a href="${root}areas/jeddah-to-jubail/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى الجبيل</a>
+                <a href="${root}areas/jeddah-to-jazan/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى جازان</a>
+                <a href="${root}areas/jeddah-to-khamis-mushait/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى خميس مشيط</a>
+                <a href="${root}areas/jeddah-to-al-ahsa/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من جدة إلى الأحساء</a>
+                <a href="${root}areas/riyadh-to-jeddah/" class="text-gray-300 hover:text-white px-3 py-1.5 rounded-lg transition-colors hover:border-[#007d3f]" style="background: rgba(30, 58, 138, 0.25); border: 1px solid rgba(30, 58, 138, 0.45);">نقل عفش من الرياض إلى جدة</a>
             </div>
         </div>
 
@@ -383,8 +403,8 @@
         const placeholder = document.getElementById('site-footer');
         const existingFooter = document.querySelector('footer#contact') || document.querySelector('footer');
 
-        // إذا كان الفوتر قد تم حقنه بالفعل
-        if (placeholder && placeholder.querySelector('footer')) {
+        // إذا كان الفوتر موجوداً بالفعل في الصفحة، لا تقم بحقن أي فوتر إضافي
+        if (existingFooter || (placeholder && placeholder.querySelector('footer'))) {
             return;
         }
 

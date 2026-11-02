@@ -1,4 +1,27 @@
+# Robots.txt for alqasr-alsueudi.com
+# Optimized for Googlebot & SEO Crawlers
+
 User-agent: *
 Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /assets/fonts/
+Allow: /dist/
 
+# Disallow internal scripts, source files, and development configs
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /*.config.js$
+Disallow: /src/
+Disallow: /assets/img_backup/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Allow specific critical root files
+Allow: /favicon.ico
+Allow: /apple-touch-icon.png
+Allow: /sitemap.xml
+
+# Sitemap definition
 Sitemap: https://alqasr-alsueudi.com/sitemap.xml
