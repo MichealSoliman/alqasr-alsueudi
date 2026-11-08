@@ -74,177 +74,198 @@
 
         <!-- Unified Schema (JSON-LD) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "MovingCompany",
+      "@id": "https://alqasr-alsueudi.com/#movingcompany",
+      "name": "شركة القصر السعودي لنقل العفش بجدة",
+      "alternateName": "القصر السعودي",
+      "url": "https://alqasr-alsueudi.com/",
+      "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
+      "image": [
+        "https://alqasr-alsueudi.com/assets/img/furniture-moving-jeddah.webp"
+      ],
+      "telephone": "+966540026747",
+      "email": "info@alqasr-alsueudi.com",
+      "priceRange": "300-2500 SAR",
+      "description": "شركة القصر السعودي لنقل أثاث المنازل والفلل والمكاتب بجدة مع الفك والتركيب والتغليف داخل جدة وخارجها.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "<!-- [[STREET_ADDRESS]] -->جدة، المملكة العربية السعودية",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "postalCode": "<!-- [[POSTAL_CODE]] -->",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[[LAT]]",
+        "longitude": "[[LNG]]"
+      },
+      "hasMap": "[[GOOGLE_MAPS_URL]]",
+      "areaServed": [
         {
-          "@type": "MovingCompany",
-          "@id": "https://alqasr-alsueudi.com/#movingcompany",
-          "name": "شركة القصر السعودي لنقل العفش بجدة",
-          "alternateName": "القصر السعودي",
-          "url": "https://alqasr-alsueudi.com/",
-          "logo": "https://alqasr-alsueudi.com/assets/img/logo.webp",
-          "image": [
-            "https://alqasr-alsueudi.com/assets/img/furniture-moving-jeddah.webp"
-          ],
-          "telephone": "+966540026747",
-          "email": "info@alqasr-alsueudi.com",
-          "priceRange": "300-2500 SAR",
-          "description": "شركة القصر السعودي لنقل أثاث المنازل والفلل والمكاتب بجدة مع الفك والتركيب والتغليف داخل جدة وخارجها.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "<!-- [[STREET_ADDRESS]] -->جدة، المملكة العربية السعودية",
-            "addressLocality": "جدة",
-            "addressRegion": "منطقة مكة المكرمة",
-            "postalCode": "<!-- [[POSTAL_CODE]] -->",
-            "addressCountry": "SA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "[[LAT]]",
-            "longitude": "[[LNG]]"
-          },
-          "hasMap": "[[GOOGLE_MAPS_URL]]",
-          "areaServed": [
-            { "@type": "City", "name": "جدة" },
-            { "@type": "AdministrativeArea", "name": "شمال جدة" },
-            { "@type": "AdministrativeArea", "name": "وسط جدة" },
-            { "@type": "AdministrativeArea", "name": "شرق جدة" },
-            { "@type": "AdministrativeArea", "name": "جنوب جدة" },
-            { "@type": "City", "name": "مكة المكرمة" },
-            { "@type": "City", "name": "الرياض" }
-          ],
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday",
-              "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-          },
-          "paymentAccepted": "Cash, Credit Card, Mada, Bank Transfer",
-          "currenciesAccepted": "SAR",
-          "sameAs": [
-            "https://x.com/alqusralsaudi",
-            "https://www.facebook.com/profile.php?id=61576821128694",
-            "https://www.instagram.com/alqusralsaudimoving/",
-            "https://www.tiktok.com/@alqusralsaudimoving",
-            "[[GBP_URL]]"
-          ]
+          "@type": "City",
+          "name": "جدة"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://alqasr-alsueudi.com/#website",
-          "url": "https://alqasr-alsueudi.com/",
-          "name": "شركة القصر السعودي",
-          "inLanguage": "ar-SA",
-          "publisher": {
-            "@id": "https://alqasr-alsueudi.com/#movingcompany"
+          "@type": "AdministrativeArea",
+          "name": "شمال جدة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "وسط جدة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "شرق جدة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "جنوب جدة"
+        },
+        {
+          "@type": "City",
+          "name": "مكة المكرمة"
+        },
+        {
+          "@type": "City",
+          "name": "الرياض"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "paymentAccepted": "Cash, Credit Card, Mada, Bank Transfer",
+      "currenciesAccepted": "SAR",
+      "sameAs": [
+        "https://x.com/alqusralsaudi",
+        "https://www.facebook.com/profile.php?id=61576821128694",
+        "https://www.instagram.com/alqusralsaudimoving/",
+        "https://www.tiktok.com/@alqusralsaudimoving",
+        "[[GBP_URL]]"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alqasr-alsueudi.com/#website",
+      "url": "https://alqasr-alsueudi.com/",
+      "name": "شركة القصر السعودي",
+      "inLanguage": "ar-SA",
+      "publisher": {
+        "@id": "https://alqasr-alsueudi.com/#movingcompany"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://alqasr-alsueudi.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كم تكلفة نقل العفش بجدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تبدأ الأسعار التقديرية لنقل العفش بجدة من 300 ريال، وتتحدد التكلفة النهائية بناءً على حجم المنقولات، عدد الغرف، المسافة بين السكن الحالي والجديد، وجود أدوار مرتفعة، والخدمات المطلوبة مثل الفك والتركيب والتغليف."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://alqasr-alsueudi.com/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "كم تكلفة نقل العفش بجدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تبدأ الأسعار التقديرية لنقل العفش بجدة من 300 ريال، وتتحدد التكلفة النهائية بناءً على حجم المنقولات، عدد الغرف، المسافة بين السكن الحالي والجديد، وجود أدوار مرتفعة، والخدمات المطلوبة مثل الفك والتركيب والتغليف."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تشمل الخدمة الفك والتركيب؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر طاقماً فنياً متخصصاً لفك غرف النوم والمطابخ والستائر والمكيفات، ثم إعادة تركيبها وتثبيتها بشكل آمن ودقيق في موقع السكن الجديد."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يتم تغليف الأثاث لحمايته أثناء النقل؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، يتم استخدام مواد تغليف مناسبة مثل البلاستيك الفقاعي والكرتون المقوى والنايلون الاسترتش لحماية الأسطح الخشبية والزجاجية والأجهزة الكهربائية من الخدوش والأتربة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تنقلون الفلل والمكاتب والشركات؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر دينا نقل مغلقة بأحجام مختلفة وشاحنات مجهزة لنقل محتويات الشقق والمنازل والفلل بالكامل، بالإضافة إلى نقل أثاث ومعدات المكاتب والشركات التجارية."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تقدمون خدمة ونش رفع الأثاث؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر رافعة ونش هيدروليكي لتنزيل ورفع الأثاث الثقيل والقطع الضخمة عبر الواجهات الخارجية للشبابيك والبلكونات في حالة ضيق المبنى أو الأدوار العليا."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل تغطي خدماتكم كافة أحياء مدينة جدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نقدم خدمات النقل في كافة أحياء شمال ووسط وشرق وجنوب جدة، إلى جانب توفير رحلات نقل وشحن العفش من جدة إلى مختلف مدن المملكة."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل توفرون مستودعات لتخزين الأثاث؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نعم، نوفر خيارات تخزين أثاث مؤقتة أو طويلة المدى في مساحات مخصصة ومحمية لمنع اختلاط المنقولات والحفاظ عليها حتى استلامها."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف يتم تحديد السعر وحجز الخدمة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "تواصل معنا عبر الاتصال أو الواتساب ووضّح حجم الأثاث وطبيعة الموقعين لتحديد التكلفة الدقيقة والموعد المناسب لبدء العمل."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "كيف أختار شركة نقل عفش موثوقة في جدة؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ابحث عن شركة تقدم عرض سعر واضحاً قبل التنفيذ، وتستخدم سيارات مقفلة، وتوفر فنيين للفك والتركيب، ولديها تقييمات حقيقية على خرائط جوجل وبيانات تواصل وعنوان معلن. وننصحك بسؤال الشركة عمّا يشمله السعر تحديداً قبل الحجز."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "هل يمكن حجز خدمة نقل العفش في نفس اليوم؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "نستقبل طلبات الحجز على مدار الساعة عبر الاتصال أو الواتساب، وتعتمد إمكانية التنفيذ في نفس اليوم على توفر الفريق والسيارات في الموعد المطلوب، لذا ننصح بالتواصل مبكراً لتأكيد الموعد."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "ما الفرق بين نقل العفش داخل جدة ونقله بين المدن؟",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "النقل داخل جدة يتم غالباً في يوم واحد وتُحسب تكلفته حسب حجم الأثاث والدور والخدمات، أما النقل بين المدن فيعتمد على المسافة ونوع الشاحنة وتغليف الطرق الطويلة، ويُحدد سعره بعد معرفة الوجهة وحجم المنقولات."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "هل تشمل الخدمة الفك والتركيب؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر طاقماً فنياً متخصصاً لفك غرف النوم والمطابخ والستائر والمكيفات، ثم إعادة تركيبها وتثبيتها بشكل آمن ودقيق في موقع السكن الجديد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يتم تغليف الأثاث لحمايته أثناء النقل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، يتم استخدام مواد تغليف مناسبة مثل البلاستيك الفقاعي والكرتون المقوى والنايلون الاسترتش لحماية الأسطح الخشبية والزجاجية والأجهزة الكهربائية من الخدوش والأتربة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تنقلون الفلل والمكاتب والشركات؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر دينا نقل مغلقة بأحجام مختلفة وشاحنات مجهزة لنقل محتويات الشقق والمنازل والفلل بالكامل، بالإضافة إلى نقل أثاث ومعدات المكاتب والشركات التجارية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تقدمون خدمة ونش رفع الأثاث؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر رافعة ونش هيدروليكي لتنزيل ورفع الأثاث الثقيل والقطع الضخمة عبر الواجهات الخارجية للشبابيك والبلكونات في حالة ضيق المبنى أو الأدوار العليا."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تغطي خدماتكم كافة أحياء مدينة جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نقدم خدمات النقل في كافة أحياء شمال ووسط وشرق وجنوب جدة، إلى جانب توفير رحلات نقل وشحن العفش من جدة إلى مختلف مدن المملكة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل توفرون مستودعات لتخزين الأثاث؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر خيارات تخزين أثاث مؤقتة أو طويلة المدى في مساحات مخصصة ومحمية لمنع اختلاط المنقولات والحفاظ عليها حتى استلامها."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يتم تحديد السعر وحجز الخدمة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تواصل معنا عبر الاتصال أو الواتساب ووضّح حجم الأثاث وطبيعة الموقعين لتحديد التكلفة الدقيقة والموعد المناسب لبدء العمل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف أختار شركة نقل عفش موثوقة في جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ابحث عن شركة تقدم عرض سعر واضحاً قبل التنفيذ، وتستخدم سيارات مقفلة، وتوفر فنيين للفك والتركيب، ولديها تقييمات حقيقية على خرائط جوجل وبيانات تواصل وعنوان معلن. وننصحك بسؤال الشركة عمّا يشمله السعر تحديداً قبل الحجز."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن حجز خدمة نقل العفش في نفس اليوم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نستقبل طلبات الحجز على مدار الساعة عبر الاتصال أو الواتساب، وتعتمد إمكانية التنفيذ في نفس اليوم على توفر الفريق والسيارات في الموعد المطلوب، لذا ننصح بالتواصل مبكراً لتأكيد الموعد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين نقل العفش داخل جدة ونقله بين المدن؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "النقل داخل جدة يتم غالباً في يوم واحد وتُحسب تكلفته حسب حجم الأثاث والدور والخدمات، أما النقل بين المدن فيعتمد على المسافة ونوع الشاحنة وتغليف الطرق الطويلة، ويُحدد سعره بعد معرفة الوجهة وحجم المنقولات."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
       <script src="/assets/js/analytics.js" defer></script>
 </head>
 
@@ -359,6 +380,7 @@
         </div>
     </div>
 </header>
+
 
 <!-- /@header -->
 
@@ -2254,13 +2276,13 @@
                     </div>
                 </div>
                 <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                    الشركة الرائدة في مجال نقل وتغليف وتركيب الأثاث السكني والمكتبي بجدة وخارجها. نعتمد على شاحنات دينا مغلقة ومجهزة ورافعات هيدروليكية للأدوار العليا مع طاقم فني محترف لضمان حماية ممتلكاتك بنسبة 100%.
+                    الشركة الرائدة في مجال نقل وتغليف وتركيب الأثاث السكني والمكتبي بجدة وخارجها. نعتمد على شاحنات دينا مغلقة ومجهزة ورافعات هيدروليكية للأدوار العليا مع طاقم فني محترف لضمان حماية ممتلكاتك بأعلى معايير الأمان.
                 </p>
                 
                 <div class="space-y-3 mb-6">
                     <div class="flex items-center gap-2.5 text-xs text-gray-300">
                         <i class="fas fa-award" style="color: #00c864;"></i>
-                        <span>خبرة ميدانية موثقة تمتد لأكثر من 15 عاماً في المملكة</span>
+                        <span>خبرة ميدانية موثقة تمتد لسنوات من الخبرة المتمرسة في المملكة</span>
                     </div>
                     <div class="flex items-center gap-2.5 text-xs text-gray-300">
                         <i class="fas fa-file-contract" style="color: #00c864;"></i>

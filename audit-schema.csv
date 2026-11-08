@@ -1,0 +1,62 @@
+URL,Types,HasBreadcrumb,FAQPageCount
+"/404.html/","","No",0
+"/about/","AboutPage; BreadcrumbList","Yes",0
+"/areas/hayu-albawadi/","Service; WebPage; ImageObject; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-aleazizia/","Service; WebPage; ImageObject; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-alfayha/","BreadcrumbList; WebPage; Service; FAQPage; ImageObject","Yes",1
+"/areas/hayu-alhamdania/","Service; BreadcrumbList","Yes",0
+"/areas/hayu-alhamraa/","Service; WebPage; ImageObject; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-aljamiah/","BreadcrumbList; WebPage; Service; FAQPage","Yes",1
+"/areas/hayu-almarwa/","Service; BreadcrumbList","Yes",0
+"/areas/hayu-alnaeim/","Service; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-alnahda/","WebPage; BreadcrumbList; Service","Yes",0
+"/areas/hayu-alnakhil/","WebPage; BreadcrumbList; Service","Yes",0
+"/areas/hayu-alnasim/","WebPage; BreadcrumbList; Service","Yes",0
+"/areas/hayu-alrabwah/","BreadcrumbList; WebPage; Service; FAQPage","Yes",1
+"/areas/hayu-alrawda/","Service; BreadcrumbList; WebPage; FAQPage","Yes",1
+"/areas/hayu-alrehab/","Service; WebPage; ImageObject; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-alruwais/","BreadcrumbList; WebPage; Service; FAQPage; ImageObject","Yes",1
+"/areas/hayu-alsalama/","Service; WebPage; ImageObject; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-alsamer/","BreadcrumbList; WebPage; Service; FAQPage","Yes",1
+"/areas/hayu-alzahra/","Service; WebPage; ImageObject; BreadcrumbList; FAQPage","Yes",1
+"/areas/hayu-mushrifah/","BreadcrumbList; WebPage; Service; FAQPage","Yes",1
+"/areas/hayu-obhur-al-shamaliya/","BreadcrumbList; Service; FAQPage","Yes",1
+"/areas/","ItemList; BreadcrumbList","Yes",0
+"/areas/jeddah-to-al-ahsa/","Service; BreadcrumbList; WebPage; FAQPage","Yes",1
+"/areas/jeddah-to-alshatea/","WebPage; BreadcrumbList","Yes",0
+"/areas/jeddah-to-dammam/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-jazan/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-jubail/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-khamis-mushait/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-khobar/","Service; WebPage; BreadcrumbList; ImageObject; ItemList; FAQPage","Yes",1
+"/areas/jeddah-to-makkah/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-medina/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-riyadh/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-safa/","Service; BreadcrumbList; FAQPage; WebPage","Yes",1
+"/areas/jeddah-to-tabuk/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/jeddah-to-taif/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/areas/riyadh-to-jeddah/","Service; WebPage; BreadcrumbList; FAQPage","Yes",1
+"/blogs/best-furniture-packaging-materials/","BlogPosting; BreadcrumbList; FAQPage","Yes",1
+"/blogs/choosing-a-furniture-moving-company/","BlogPosting; BreadcrumbList; WebPage; FAQPage","Yes",1
+"/blogs/how-to-move-heavy-furniture-without-damage/","BlogPosting; BreadcrumbList","Yes",0
+"/blogs/","Blog; BreadcrumbList","Yes",0
+"/blogs/tips-before-moving-furniture-in-jeddah/","BlogPosting; BreadcrumbList; FAQPage","Yes",1
+"/contact/","ContactPage; BreadcrumbList","Yes",0
+"/disassembly-and-assembly-of-bedrooms/","Service; BreadcrumbList; FAQPage","Yes",1
+"/dyna-furniture-moving-jeddah/","Service; BreadcrumbList; FAQPage","Yes",1
+"/furniture-dismantling-and-assembly-in-jeddah/","Service; BreadcrumbList; FAQPage","Yes",1
+"/furniture-moving-between-jeddah-cities/","Service; BreadcrumbList; FAQPage","Yes",1
+"/furniture-moving-prices-in-jeddah/","WebPage; Service; BreadcrumbList; FAQPage","Yes",1
+"/furniture-packing-in-jeddah/","Service; BreadcrumbList; WebPage; FAQPage","Yes",1
+"/furniture-storage-in-jeddah/","Service; BreadcrumbList; FAQPage","Yes",1
+"/gallery/","CollectionPage; BreadcrumbList","Yes",0
+"/","MovingCompany; WebSite; FAQPage","No",1
+"/moving-electrical-appliances-in-jeddah/","Service; BreadcrumbList; FAQPage","Yes",1
+"/moving-furniture-inside-jeddah/","Service; BreadcrumbList; FAQPage","Yes",1
+"/moving-offices-in-jeddah/","Service; BreadcrumbList; FAQPage","Yes",1
+"/moving-villas-apartments-offices/","Service; BreadcrumbList; FAQPage","Yes",1
+"/north-jeddah-furniture-moving/","Service; BreadcrumbList; FAQPage","Yes",1
+"/privacy-policy/","WebPage; BreadcrumbList","Yes",0
+"/services/","CollectionPage; ItemList; BreadcrumbList","Yes",0
+"/terms-of-service/","WebPage; BreadcrumbList","Yes",0
+"/villa-moving-jeddah/","Service; BreadcrumbList; WebPage; FAQPage","Yes",1
