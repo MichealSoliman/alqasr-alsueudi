@@ -1,13 +1,46 @@
 RewriteEngine On
 
-# 1. توحيد https + إزالة www
+# 0. صفحة الخطأ 404 المخصصة
+ErrorDocument 404 /404.html
+
+# 1. توحيد HTTPS + إزالة www في خطوة واحدة مباشرة (بدون سلاسل)
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.alqasr-alsueudi\.com$ [NC]
 RewriteRule ^ https://alqasr-alsueudi.com%{REQUEST_URI} [L,R=301]
 
-# 2. تحويلات 301 لمنع كانيباليزيشن الصفحة الرئيسية (Primary Keyword Cannibalization)
+# 2. إزالة /index.html من نهاية الروابط وتحويلها للمسار النظيف
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.html\ HTTP/
+RewriteRule ^((?:[^/]+/)*)index\.html$ https://alqasr-alsueudi.com/$1 [R=301,L,NC]
+
+# 3. فرض الشرطة المائلة النهائية (Trailing Slash) للمجلدات والمسارات النظيفة في خطوة واحدة
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]+)$
+RewriteRule ^(.*)$ https://alqasr-alsueudi.com/$1/ [R=301,L]
+
+# 4. تحويلات 301 الصريحة للروابط التي لا ملف لها (المطابقة المحددة في البند C.2)
+RewriteRule ^blogs/furniture-moving-prices-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-dismantling-and-assembly-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-dismantling-and-assembly-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-packing-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-packing-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-moving-for-offices-and-companies/?$ https://alqasr-alsueudi.com/moving-offices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/best-furniture-moving-north-jeddah/?$ https://alqasr-alsueudi.com/north-jeddah-furniture-moving/ [R=301,L,NC]
+RewriteRule ^blogs/cheap-furniture-moving-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^furniture-moving-in-jeddah/?$ https://alqasr-alsueudi.com/moving-furniture-inside-jeddah/ [R=301,L,NC]
+RewriteRule ^furniture-moving-company-in-jeddah-and-riyadh/?$ https://alqasr-alsueudi.com/areas/jeddah-to-riyadh/ [R=301,L,NC]
+RewriteRule ^intercity/?$ https://alqasr-alsueudi.com/furniture-moving-between-jeddah-cities/ [R=301,L,NC]
+RewriteRule ^areas/jeddah-to-alkhabar/?$ https://alqasr-alsueudi.com/areas/jeddah-to-khobar/ [R=301,L,NC]
+
+# تحويلات إضافية لمقالات المدونة المكررة والمدمجة مسبقاً
+RewriteRule ^blogs/furniture-storage-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-storage-company-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-packing-and-storage-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/furniture-storage-warehouses-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/cheapest-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
+RewriteRule ^blogs/cheap-dyna-furniture-moving-jeddah/?$ https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/ [R=301,L,NC]
+RewriteRule ^furniture-moving-in-villas-in-jeddah/?$ https://alqasr-alsueudi.com/villa-moving-jeddah/ [R=301,L,NC]
+
+# تحويلات الكلمة المفتاحية الرئيسية للصفحة الرئيسية
 RewriteRule ^furniture-moving-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
-RewriteRule ^furniture-moving-in-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 RewriteRule ^best-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 RewriteRule ^jeddah-furniture-moving-company/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 RewriteRule ^blogs/best-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
@@ -16,38 +49,19 @@ RewriteRule ^blogs/best-moving-company-jeddah/?$ https://alqasr-alsueudi.com/ [R
 RewriteRule ^blogs/furniture-moving-services-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 RewriteRule ^blogs/furniture-transportation-jeddah/?$ https://alqasr-alsueudi.com/ [R=301,L,NC]
 
-# 2.5 تحويلات 301 لمقالات المدونة المدمجة مع صفحات الخدمات المخصصة
-RewriteRule ^blogs/best-furniture-moving-north-jeddah/?$ https://alqasr-alsueudi.com/north-jeddah-furniture-moving/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-moving-for-offices-and-companies/?$ https://alqasr-alsueudi.com/moving-offices-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-moving-trucks-in-jeddah/?$ https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/ [R=301,L,NC]
-
-# 3. تحويلات 301 لمقالات والخدمات المكررة القديمة إلى صفحات الخدمات الرئيسية الصريحة
-RewriteRule ^blogs/furniture-dismantling-and-assembly-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-dismantling-and-assembly-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-packing-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-packing-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-storage-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-storage-company-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-packing-and-storage-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-storage-warehouses-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-storage-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/furniture-moving-prices-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/cheapest-furniture-moving-company-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/cheap-furniture-moving-in-jeddah/?$ https://alqasr-alsueudi.com/furniture-moving-prices-in-jeddah/ [R=301,L,NC]
-RewriteRule ^blogs/cheap-dyna-furniture-moving-jeddah/?$ https://alqasr-alsueudi.com/dyna-furniture-moving-jeddah/ [R=301,L,NC]
-RewriteRule ^furniture-moving-in-villas-in-jeddah/?$ https://alqasr-alsueudi.com/villa-moving-jeddah/ [R=301,L,NC]
-RewriteRule ^furniture-moving-company-in-jeddah-and-riyadh/?$ https://alqasr-alsueudi.com/areas/jeddah-to-riyadh/ [R=301,L,NC]
-
-# 4. تشغيل الصفحات بدون كتابة .html
+# 5. تشغيل الصفحات بدون كتابة .html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^/]+)/?$ $1.html [L]
 
-# 5. منع تصفح الفولدرات وحماية الملفات الحساسة
+# 6. منع تصفح الفولدرات وحماية الملفات الحساسة
 Options -Indexes
 
 <FilesMatch "^(\.htaccess|\.env|config\.php|composer\.json)$">
 Require all denied
 </FilesMatch>
 
-# 6. ضغط الملفات وتحسين التخزين المؤقت
+# 7. ضغط الملفات وتحسين التخزين المؤقت
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css
 AddOutputFilterByType DEFLATE application/javascript application/json application/xml

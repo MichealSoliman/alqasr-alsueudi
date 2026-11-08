@@ -1,57 +1,23 @@
 const fs = require('fs');
+const path = require('path');
 
-const updatedUrls = [
-    'https://alqasr-alsueudi.com/',
-    'https://alqasr-alsueudi.com/areas/',
-    'https://alqasr-alsueudi.com/furniture-moving-between-jeddah-cities/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-riyadh/',
-    'https://alqasr-alsueudi.com/areas/riyadh-to-jeddah/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-makkah/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-medina/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-dammam/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-taif/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-khobar/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-jubail/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-tabuk/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-jazan/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-khamis-mushait/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-al-ahsa/',
-    'https://alqasr-alsueudi.com/blogs/how-to-move-heavy-furniture-without-damage/'
-];
+const sitemapPath = path.resolve(__dirname, '../sitemap.xml');
+let sm = fs.readFileSync(sitemapPath, 'utf8');
 
-let sitemap = fs.readFileSync('sitemap.xml', 'utf8');
+// 1. Remove priority and changefreq tags if any
+sm = sm.replace(/<priority>[\s\S]*?<\/priority>\s*/gi, '');
+sm = sm.replace(/<changefreq>[\s\S]*?<\/changefreq>\s*/gi, '');
 
-let count = 0;
-for (const url of updatedUrls) {
-    // regex matching <url>\s*<loc>url</loc>\s*<lastmod>[^<]+</lastmod>
-    const escapedUrl = url.replace(/[\/\.]/g, '\\$&');
-    const regex = new RegExp(`(<loc>${escapedUrl}<\/loc>\\s*<lastmod>)[^<]+(<\/lastmod>)`);
-    if (regex.test(sitemap)) {
-        sitemap = sitemap.replace(regex, `$12026-11-04$2`);
-        count++;
-        console.log(`Updated: ${url}`);
-    } else {
-        console.log(`NOT found: ${url}`);
-    }
+// 2. Add /contact/ if not already present
+if (!sm.includes('https://alqasr-alsueudi.com/contact/')) {
+  const contactEntry = `  <url>\n    <loc>https://alqasr-alsueudi.com/contact/</loc>\n    <lastmod>2026-11-08</lastmod>\n  </url>\n`;
+  sm = sm.replace('</urlset>', contactEntry + '</urlset>');
 }
 
-// Also upgrade priorities of intercity routes to 0.9 if 0.8
-const intercityUrls = [
-    'https://alqasr-alsueudi.com/areas/riyadh-to-jeddah/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-medina/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-khobar/',
-    'https://alqasr-alsueudi.com/areas/jeddah-to-al-ahsa/'
-];
-
-for (const url of intercityUrls) {
-    const escapedUrl = url.replace(/[\/\.]/g, '\\$&');
-    const prioRegex = new RegExp(`(<loc>${escapedUrl}<\\/loc>[\\s\\S]*?<priority>)0\\.8(<\\/priority>)`);
-    if (prioRegex.test(sitemap)) {
-        sitemap = sitemap.replace(prioRegex, `$10.9$2`);
-        console.log(`Priority upgraded to 0.9: ${url}`);
-    }
+// 3. Ensure gallery is not in sitemap (since it is noindex)
+if (sm.includes('https://alqasr-alsueudi.com/gallery/')) {
+  sm = sm.replace(/<url>\s*<loc>https:\/\/alqasr-alsueudi\.com\/gallery\/<\/loc>[\s\S]*?<\/url>\s*/gi, '');
 }
 
-fs.writeFileSync('sitemap.xml', sitemap, 'utf8');
-console.log(`Total URLs updated with 2026-11-04: ${count}/${updatedUrls.length}`);
-
+fs.writeFileSync(sitemapPath, sm, 'utf8');
+console.log('sitemap.xml successfully cleaned and updated with contact page!');
