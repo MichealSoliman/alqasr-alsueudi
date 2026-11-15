@@ -174,8 +174,14 @@
         }
 
         // قائمة الموبايل الرئيسية
+        // مالك واحد للنقرة: مستمع في مرحلة الالتقاط (capture) على مستوى document يوقف انتشار الحدث،
+        // فلا تصل النقرة إلى الزر نفسه، وبالتالي لا تعمل سكربتات التبديل المضمّنة (inline) في الصفحات ولا بديل main.js.
+        // هذا يمنع تشغيل حدثين على النقرة نفسها دون تعديل سكربتات الصفحات (التي تحتوي أيضاً على منطق الأسئلة الشائعة والبحث).
         if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', function (e) {
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.setAttribute('aria-controls', 'mobile-menu');
+            document.addEventListener('click', function (e) {
+                if (!e.target || !e.target.closest || !e.target.closest('#mobile-menu-btn')) return;
                 e.stopPropagation();
                 const isCurrentlyHidden = mobileMenu.classList.contains('hidden');
                 
@@ -198,7 +204,7 @@
                         icon.classList.add('fa-bars');
                     }
                 }
-            });
+            }, true);
 
             // إغلاق القائمة عند الضغط على أي رابط داخلها (باستثناء أزرار القوائم الفرعية)
             const mobileLinks = mobileMenu.querySelectorAll('a');
@@ -231,7 +237,7 @@
         }
 
         // دعم النقر على "خدماتنا" للشاشات التي تعمل باللمس (Tablets / Laptops touch)
-        const desktopDropdownGroup = document.querySelector('.site-header .group, header .group');
+        // يُعاد استخدام desktopDropdownGroup المعرّف أعلاه (إعادة تعريفه بـ const كانت SyntaxError تعطّل الملف بالكامل منذ إنشائه)
         if (desktopDropdownGroup) {
             const groupBtn = desktopDropdownGroup.querySelector('button');
             if (groupBtn) {

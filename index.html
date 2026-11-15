@@ -1498,8 +1498,8 @@
     </div>
     <!-- Main JavaScript -->
     <script src="/assets/js/main.js" defer=""></script>
-    <!-- navbar.js removed from this page: it currently throws "Identifier 'desktopDropdownGroup' has already been declared"
-         and never executes; main.js handles the mobile menu. Re-add once navbar.js is fixed site-wide (see audit/13-homepage-recovery-report.md). -->
+    <!-- Mobile menu: navbar.js is the single owner of the menu button (see audit/site-wide-seo-recovery-report.md) -->
+    <script src="/assets/js/navbar.js" defer></script>
     <script>
         function toggleFaq(ansId, btn) {
             const ans = document.getElementById(ansId);
